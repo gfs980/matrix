@@ -1,0 +1,71 @@
+body {
+  padding: 2rem;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.main{
+  padding: 2rem 0;
+}
+
+
+.input__group{
+  display: flex;
+  /* padding-right: 3rem; */
+}
+
+.input__matrix{
+  width: 3rem;
+}
+
+.form > *:not(:last-child){
+  padding-bottom: 4rem;
+}
+
+.scopes{
+  margin: auto;
+  transform: scale(2, 4);
+  /* padding-right: 3rem; */
+  padding: 0 2rem;
+}
+
+
+.matrices{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+
+.button{
+  padding: .5rem 1rem;
+  background-color: coral;
+  border: none;
+  color: white;
+  margin: 1rem;
+}
+.button__submit{
+  margin-top: 4rem;
+}
+
+.table{
+  padding-bottom: 4rem;
+}
+
+.results{
+  display: grid;
+  justify-content: center;
+}
+
+
+.matrix2__tbody{
+  display: inline-flex;
+}
+
+
+.matrix2__row{
+  display: grid;
+}

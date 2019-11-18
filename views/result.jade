@@ -1,0 +1,17 @@
+extends layout
+
+
+block content
+
+    div(class="results")
+        div(class="matrix")
+            h1 Results:
+
+            table(id="result" class="table")
+                each matrices, i in results
+                    tr
+                        td
+                            each matrix, i in matrices
+                                input(value=matrix)
+
+    a(href="/" class="button") BACK

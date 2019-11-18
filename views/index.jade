@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  header
+    h1= title
+    p Welcome to #{title}
+  div(class="main")
+    form(action="/calculation", method="get" class="form")
+      div(class="form__buttons")
+        <INPUT type="button" value="Add Rows" class="button" onclick="addIntoTableRow()" />
+        <INPUT type="button" value="Add Columns" class="button" onclick="addIntoTableColumn()" />
+        a(href="/" class="button") Clean
+
+      div(class="matrices")
+        div(class="matrix")
+          h1 Matrix 1
+          table(id="matrix_1" class="table")
+            tr
+              <td><input type="number" class="input__matrix" name="matrix_1[0][]" value="" required/> </td>
+          div(class="input__group")
+            p Scalar
+            input(type="number", name="scalar" class='input__matrix')
+          
+        div(class="matrix")
+          h1 Matrix 2
+          table(id="matrix_2" class="table")
+            tbody(class='matrix2__tbody')
+              tr(class="matrix2__row")
+                <td><input type="number" class="input__matrix" name="matrix_2[0][]" value=""/> </td>
+
+      
+
+      button(type="submit" class="button__submit button") Calculate
+
+    script(src="/javascripts/matrix.js")
+     
